@@ -1,0 +1,16 @@
+.nav {
+    grid-area: n;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+
+.item {
+    color: black;
+    text-decoration: none;
+}
+
+.active {
+    color: purple;
+    text-decoration: none;
+}
