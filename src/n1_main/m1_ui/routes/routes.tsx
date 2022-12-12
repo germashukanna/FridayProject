@@ -1,7 +1,7 @@
 import {NavLink} from "react-router-dom";
 import s from "./routes.module.css"
 
-export const Routes = () => {
+export const RoutesNavLink = () => {
     return (
         <nav className={s.nav}>
             <div><NavLink to="/test" className={(navData) => navData.isActive ? s.active : s.item}>Test</NavLink></div>

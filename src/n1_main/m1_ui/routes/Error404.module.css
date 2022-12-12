@@ -1,0 +1,12 @@
+.wappaper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.error404 {
+    max-width: 40%;
+    max-height: 40%;
+    margin-top: 70px;
+}

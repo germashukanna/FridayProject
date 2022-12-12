@@ -6,9 +6,10 @@ import {Registration} from "../../n2_features/f1-auth/a2-register/registration";
 import {Main} from "./main";
 import {useAppDispatch, useAppSelector} from "./Hooks";
 import {Test} from "./Test";
-import ErrorImg from "./assets/error.jpg"
 import {PasswordRecovery} from "../../n2_features/f1-auth/a2-password/passwordRecovery";
 import {NewPassword} from "../../n2_features/f1-auth/a2-password/newRecovery";
+import {Error404} from "./routes/Error404";
+import {RoutesNavLink} from "./routes/routes";
 
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
 
         <BrowserRouter>
             <div className="App">
+                <RoutesNavLink/>
                 <Routes>
                     <Route path={'/'} element={<Navigate to={'/main'}/>}/>
                     <Route path={'/main'} element={<Main/>}/>
@@ -37,7 +39,7 @@ const App = () => {
                     <Route path={'/registration'} element={<Registration/>}/>
                     <Route path={'/passwordRecovery'} element={<PasswordRecovery/>}/>
                     <Route path={'/newRecovery'} element={<NewPassword/>}/>
-                    <Route path={'/404'} element={<h1><img alt={''} src={ErrorImg}/></h1>}/>
+                    <Route path={'/404'} element={<Error404/>}/>
                     <Route path="*" element={<Navigate to={'/404'}/>}/>
                 </Routes>
             </div>
